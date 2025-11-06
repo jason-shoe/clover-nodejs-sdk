@@ -20,6 +20,6 @@ export function createCloverClient({
 }): CloverClient {
   return createOpenApiClient<paths>({
     baseUrl: BASE_URLS[environment],
-    headers: { "x-relay-auth": authKey },
+    headers: { authorization: `Bearer ${authKey}` },
   });
 }
