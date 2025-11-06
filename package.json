@@ -1,0 +1,25 @@
+{
+  "name": "root",
+  "version": "1.0.6",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "build": "pnpm run build:all",
+    "build:api": "cd src/api && pnpm run build",
+    "build:generate": "cd src/generate && pnpm run build",
+    "build:all": "pnpm run build:generate && pnpm run build:api",
+    "release:patch": "node scripts/release.js patch",
+    "release:minor": "node scripts/release.js minor",
+    "release:major": "node scripts/release.js major"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@8.10.0+sha1.77d568bacf41eeefd6695a7087c1282433955b5c",
+  "devDependencies": {
+    "@types/prettier": "^3.0.0",
+    "prettier": "^3.6.2"
+  }
+}

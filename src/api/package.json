@@ -1,0 +1,59 @@
+{
+  "name": "relay-nodejs-sdk",
+  "version": "1.0.9",
+  "description": "Official Node.js SDK for Relay Delivery API",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts --clean",
+    "dev": "tsup src/index.ts --format cjs,esm --dts --watch",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "pnpm run clean && pnpm run build",
+    "release:patch": "node scripts/release.js patch",
+    "release:minor": "node scripts/release.js minor",
+    "release:major": "node scripts/release.js major",
+    "test": "node -e \"try { require('./dist/index.js'); console.log('✅ Package test passed'); } catch(e) { console.error('❌ Package test failed:', e.message); process.exit(1); }\""
+  },
+  "keywords": [
+    "relay",
+    "delivery",
+    "api",
+    "sdk",
+    "nodejs",
+    "typescript"
+  ],
+  "author": "Relay Delivery",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jason-shoe/relay-nodejs-sdk"
+  },
+  "bugs": {
+    "url": "https://github.com/jason-shoe/relay-nodejs-sdk/issues"
+  },
+  "homepage": "https://github.com/jason-shoe/relay-nodejs-sdk#readme",
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.2.1",
+    "prettier": "^3.6.2",
+    "tsup": "^8.0.0",
+    "typescript": "^5.9.2"
+  },
+  "dependencies": {
+    "openapi-fetch": "^0.14.0"
+  }
+}
