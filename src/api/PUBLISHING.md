@@ -1,10 +1,10 @@
 # Publishing Guide
 
-This guide explains how to publish the `@relay/relay-nodejs-sdk` package to npm.
+This guide explains how to publish the `@clover/clover-nodejs-sdk` package to npm.
 
 ## Prerequisites
 
-1. **NPM Account**: You need an npm account with access to the `@relay` organization
+1. **NPM Account**: You need an npm account with access to the `@clover` organization
 2. **NPM Token**: Generate an npm access token from your npm account settings
 3. **GitHub Secrets**: Add your npm token to GitHub repository secrets
 
@@ -31,7 +31,7 @@ Go to: `Settings` → `Secrets and variables` → `Actions` → `New repository 
 
 ### 3. Organization Access
 
-Ensure you have publish access to the `@relay` organization on npm. Contact your npm organization admin if you don't have access.
+Ensure you have publish access to the `@clover` organization on npm. Contact your npm organization admin if you don't have access.
 
 ## Publishing Process
 
@@ -92,12 +92,12 @@ pnpm publish --tag alpha
 
 The published package includes:
 
-- **@relay/relay-nodejs-sdk**: Main SDK package
+- **@clover/clover-nodejs-sdk**: Main SDK package
   - `dist/` - Built JavaScript and TypeScript files
   - `README.md` - Package documentation
   - `package.json` - Package metadata
 
-**Note**: The `@relay/generate` package is marked as private and is not published to npm.
+**Note**: The `@clover/generate` package is marked as private and is not published to npm.
 
 Excluded from the package:
 
@@ -111,7 +111,7 @@ Excluded from the package:
 ### Common Issues
 
 1. **Authentication Error**: Ensure you're logged in to npm and have the correct token
-2. **Access Denied**: Verify you have publish access to the `@relay` organization
+2. **Access Denied**: Verify you have publish access to the `@clover` organization
 3. **Build Failures**: Check that all dependencies are installed and TypeScript compiles
 4. **Version Conflicts**: Ensure the version you're trying to publish doesn't already exist
 
@@ -120,7 +120,7 @@ Excluded from the package:
 If you need to unpublish a version:
 
 ```bash
-pnpm unpublish relay-nodejs-sdk@1.0.1
+pnpm unpublish clover-nodejs-sdk@1.0.1
 ```
 
 **Note**: npm only allows unpublishing within 72 hours of publishing.

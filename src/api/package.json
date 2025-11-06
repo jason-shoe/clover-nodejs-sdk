@@ -1,5 +1,5 @@
 {
-  "name": "relay-nodejs-sdk",
+  "name": "clover-nodejs-sdk",
   "version": "1.0.9",
   "description": "Official Node.js SDK for Relay Delivery API",
   "main": "dist/index.js",
@@ -27,7 +27,7 @@
     "test": "node -e \"try { require('./dist/index.js'); console.log('✅ Package test passed'); } catch(e) { console.error('❌ Package test failed:', e.message); process.exit(1); }\""
   },
   "keywords": [
-    "relay",
+    "clover",
     "delivery",
     "api",
     "sdk",
@@ -38,12 +38,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jason-shoe/relay-nodejs-sdk"
+    "url": "https://github.com/jason-shoe/clover-nodejs-sdk"
   },
   "bugs": {
-    "url": "https://github.com/jason-shoe/relay-nodejs-sdk/issues"
+    "url": "https://github.com/jason-shoe/clover-nodejs-sdk/issues"
   },
-  "homepage": "https://github.com/jason-shoe/relay-nodejs-sdk#readme",
+  "homepage": "https://github.com/jason-shoe/clover-nodejs-sdk#readme",
   "engines": {
     "node": ">=16.0.0"
   },

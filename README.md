@@ -1,27 +1,27 @@
-# relay-nodejs-sdk
+# clover-nodejs-sdk
 
-[![npm version](https://img.shields.io/npm/v/relay-nodejs-sdk.svg)](https://www.npmjs.com/package/relay-nodejs-sdk)
-[![npm downloads](https://img.shields.io/npm/dm/relay-nodejs-sdk.svg)](https://www.npmjs.com/package/relay-nodejs-sdk)
+[![npm version](https://img.shields.io/npm/v/clover-nodejs-sdk.svg)](https://www.npmjs.com/package/clover-nodejs-sdk)
+[![npm downloads](https://img.shields.io/npm/dm/clover-nodejs-sdk.svg)](https://www.npmjs.com/package/clover-nodejs-sdk)
 
 > **⚠️ Disclaimer: This is an unofficial, community-maintained SDK for the Relay Delivery API. It is not officially affiliated with or endorsed by Relay Delivery.**
 
-A comprehensive Node.js SDK for the [Relay Delivery API](https://docs.relay.delivery/api/v2.html), providing type-safe access to all API endpoints with full TypeScript support.
+A comprehensive Node.js SDK for the [Clover API](https://docs.clover.com/dev/reference), providing type-safe access to all API endpoints with full TypeScript support.
 
 ## 📦 Installation
 
 ```bash
-pnpm add relay-nodejs-sdk
+pnpm add clover-nodejs-sdk
 ```
 
 ## 🚀 Quick Start
 
 ```typescript
-import { createRelayClient } from 'relay-nodejs-sdk';
+import { createRelayClient } from "clover-nodejs-sdk";
 
 // Create a client instance
 const client = createRelayClient({
-  apiKey: 'your-api-key',
-  environment: 'production', // or 'development'
+  apiKey: "your-api-key",
+  environment: "production", // or 'development'
 });
 
 // Use the client to make API calls
@@ -43,7 +43,7 @@ For detailed API documentation, see the [API package README](./src/api/README.md
 ## 🏗️ Project Structure
 
 ```
-relay-nodejs-sdk/
+clover-nodejs-sdk/
 ├── src/
 │   ├── api/          # Main SDK package (published to npm)
 │   └── generate/     # Code generation utilities
@@ -124,6 +124,6 @@ This is an unofficial SDK maintained by the community. Contributions are welcome
 
 ## 🔗 Links
 
-- [NPM Package](https://www.npmjs.com/package/relay-nodejs-sdk)
-- [Relay Delivery API Documentation](https://docs.relay.delivery/api/v2.html)
-- [GitHub Repository](https://github.com/jason-shoe/relay-nodejs-sdk)
+- [NPM Package](https://www.npmjs.com/package/clover-nodejs-sdk)
+- [Relay Delivery API Documentation](https://docs.clover.delivery/api/v2.html)
+- [GitHub Repository](https://github.com/jason-shoe/clover-nodejs-sdk)

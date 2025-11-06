@@ -1,4 +1,4 @@
-# relay-nodejs-sdk
+# cloverr-nodejs-sdk
 
 > **⚠️ Disclaimer: This is an unofficial, community-maintained SDK for the Relay Delivery API. It is not officially affiliated with or endorsed by Relay Delivery.**
 
@@ -7,18 +7,18 @@ Node.js SDK for Relay Delivery API
 ## Installation
 
 ```bash
-pnpm add relay-nodejs-sdk
+pnpm add clover-nodejs-sdk
 ```
 
 ## Usage
 
 ```typescript
-import { createRelayClient } from 'relay-nodejs-sdk';
+import { createRelayClient } from "clover-nodejs-sdk";
 
 // Create a client instance
 const client = createRelayClient({
-  apiKey: 'your-api-key',
-  environment: 'production', // or 'development'
+  apiKey: "your-api-key",
+  environment: "production", // or 'development'
 });
 
 // Use the client to make API calls
