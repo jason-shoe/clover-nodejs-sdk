@@ -3,7 +3,7 @@
 [![npm version](https://img.shields.io/npm/v/clover-nodejs-sdk.svg)](https://www.npmjs.com/package/clover-nodejs-sdk)
 [![npm downloads](https://img.shields.io/npm/dm/clover-nodejs-sdk.svg)](https://www.npmjs.com/package/clover-nodejs-sdk)
 
-> **⚠️ Disclaimer: This is an unofficial, community-maintained SDK for the Relay Delivery API. It is not officially affiliated with or endorsed by Relay Delivery.**
+> **⚠️ Disclaimer: This is an unofficial, community-maintained SDK for the Clover API. It is not officially affiliated with or endorsed by Clover .**
 
 A comprehensive Node.js SDK for the [Clover API](https://docs.clover.com/dev/reference), providing type-safe access to all API endpoints with full TypeScript support.
 
@@ -16,16 +16,16 @@ pnpm add clover-nodejs-sdk
 ## 🚀 Quick Start
 
 ```typescript
-import { createRelayClient } from "clover-nodejs-sdk";
+import { createCloverClient } from "clover-nodejs-sdk";
 
 // Create a client instance
-const client = createRelayClient({
+const client = createCloverClient({
   apiKey: "your-api-key",
   environment: "production", // or 'development'
 });
 
 // Use the client to make API calls
-// The client provides type-safe methods for all Relay API endpoints
+// The client provides type-safe methods for all Clover API endpoints
 ```
 
 ## ✨ Features
@@ -33,7 +33,7 @@ const client = createRelayClient({
 - **Type-safe**: Full TypeScript support with generated types
 - **Modern**: ES modules and CommonJS support
 - **Lightweight**: Minimal dependencies
-- **Comprehensive**: Covers all Relay Delivery API endpoints
+- **Comprehensive**: Covers all Clover API endpoints
 - **Unofficial**: Community-maintained with no official affiliation
 
 ## 📚 Documentation
@@ -125,5 +125,5 @@ This is an unofficial SDK maintained by the community. Contributions are welcome
 ## 🔗 Links
 
 - [NPM Package](https://www.npmjs.com/package/clover-nodejs-sdk)
-- [Relay Delivery API Documentation](https://docs.clover.delivery/api/v2.html)
+- [Clover Delivery API Documentation](https://docs.clover.delivery/api/v2.html)
 - [GitHub Repository](https://github.com/jason-shoe/clover-nodejs-sdk)

@@ -1,8 +1,8 @@
-# cloverr-nodejs-sdk
+# clover-nodejs-sdk
 
-> **⚠️ Disclaimer: This is an unofficial, community-maintained SDK for the Relay Delivery API. It is not officially affiliated with or endorsed by Relay Delivery.**
+> **⚠️ Disclaimer: This is an unofficial, community-maintained SDK for the Clover API. It is not officially affiliated with or endorsed by Clover Delivery.**
 
-Node.js SDK for Relay Delivery API
+Node.js SDK for Clover API
 
 ## Installation
 
@@ -13,16 +13,16 @@ pnpm add clover-nodejs-sdk
 ## Usage
 
 ```typescript
-import { createRelayClient } from "clover-nodejs-sdk";
+import { createCloverClient } from "clover-nodejs-sdk";
 
 // Create a client instance
-const client = createRelayClient({
+const client = createCloverClient({
   apiKey: "your-api-key",
   environment: "production", // or 'development'
 });
 
 // Use the client to make API calls
-// The client provides type-safe methods for all Relay API endpoints
+// The client provides type-safe methods for all Clover API endpoints
 ```
 
 ## Features
@@ -30,20 +30,20 @@ const client = createRelayClient({
 - **Type-safe**: Full TypeScript support with generated types
 - **Modern**: ES modules and CommonJS support
 - **Lightweight**: Minimal dependencies
-- **Comprehensive**: Covers all Relay Delivery API endpoints
+- **Comprehensive**: Covers all Clover API endpoints
 
 ## API Reference
 
-### `createRelayClient(options)`
+### `createCloverClient(options)`
 
-Creates a new Relay API client instance.
+Creates a new Clover API client instance.
 
 #### Options
 
-- `apiKey` (string, required): Your Relay API key
+- `apiKey` (string, required): Your Clover API key
 - `environment` (string, optional): API environment ('production' or 'development', defaults to 'production')
 
-### `RelayEnvironment`
+### `CloverEnvironment`
 
 Enum for available API environments.
 
