@@ -1,7 +1,7 @@
-export { createRelayClient, type RelayClient } from './createRelayClient';
-export { RelayEnvironment } from './RelayEnvironment';
+export { createCloverClient, type CloverClient } from "./createCloverClient";
+export { CloverEnvironment } from "./CloverEnvironment";
 export type {
-  paths as RelayPaths,
-  components as RelayComponents,
-  operations as RelayOperations,
-} from './openapi/types';
+  paths as CloverPaths,
+  components as CloverComponents,
+  operations as CloverOperations,
+} from "./openapi/types";
